@@ -8,6 +8,7 @@ pip install pydirectinput
 pip install opencv-python
 pip install pillow
 pip install selenium
+pip install openpyxl
 Open python terminal and set your credentials with keyring.set_password("nameofacct", "username", "pass")
 The credentials variable calls this
 This script should be run on a single monitor
