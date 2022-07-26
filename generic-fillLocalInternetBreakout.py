@@ -4,9 +4,6 @@ Install python on PC
 Open powershell 
 pip install keyring
 pip install autogui
-pip install pydirectinput
-pip install opencv-python
-pip install pillow
 pip install selenium
 pip install openpyxl
 Open python terminal and set your credentials with keyring.set_password("nameofacct", "username", "pass")
@@ -30,14 +27,10 @@ You will need to change the scroll value to fit your needs
 
 from lib2to3.pgen2.driver import Driver
 import openpyxl
-import mouse
 from telnetlib import IP
 import keyring
 import pyautogui
 import pyautogui as py
-import pydirectinput
-import cv2
-import PIL
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -50,6 +43,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 import selenium.webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.common.exceptions import TimeoutException
 import configparser
