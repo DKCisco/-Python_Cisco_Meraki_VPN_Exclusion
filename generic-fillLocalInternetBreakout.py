@@ -3,15 +3,15 @@ Before running this script correctly you will need to do the following:
 Install python on PC
 Open powershell 
 pip install keyring
-pip install autogui
+pip install PyAutoGUI
 pip install selenium
 pip install openpyxl
-Open python terminal and set your credentials with keyring.set_password("nameofacct", "username", "pass")
+Open python terminal and set your credentials with by importing keyring and then running keyring.set_password("nameofacct", "username", "pass")
 The credentials variable calls this
 This script should be run on a single monitor
 Define the size for your resolution in the pyautogui.size()
 Disable mfa for your meraki account
-Download the ChromeDriver 104.0.5112.20, https://chromedriver.chromium.org/downloads
+Download the ChromeDriver 104.0.5112.20, https://chromedriver.chromium.org/downloads and unzip it in your documents folder
 Change the driver location for driver = webdriver.Chrome(executable_path = r"C:\Users\user\Documents\chromedriver.exe")
 Change the url for url_sd_wan_and_traffic_rules
 Change the url for driver.get('https://orgID.meraki.com/login/dashboard_login')
